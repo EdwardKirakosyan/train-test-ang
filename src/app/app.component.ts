@@ -11,5 +11,5 @@ import { TodoGroupComponent } from './components/todo-group/todo-group.component
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'train-test-ang';
+  public todoGroups;
 }

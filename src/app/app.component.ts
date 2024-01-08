@@ -18,11 +18,13 @@ export class AppComponent {
     this.todoGroups = [
       {
         title: 'first',
-        item: {
-          title: 'todo',
-          description: 'sss',
-          status: ToDoStatus.IN_PROGRES,
-        },
+        items: [
+          {
+            title: 'todo',
+            description: 'sss',
+            status: ToDoStatus.IN_PROGRES,
+          },
+        ],
       },
     ];
   }

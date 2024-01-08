@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { TodoItemComponent } from '../todo-item/todo-item.component';
+import { TodoGroup } from '../../interfaces/todo-group.interface';
 
 @Component({
   selector: 'app-todo-group',
@@ -9,4 +10,7 @@ import { TodoItemComponent } from '../todo-item/todo-item.component';
   templateUrl: './todo-group.component.html',
   styleUrl: './todo-group.component.scss',
 })
-export class TodoGroupComponent {}
+export class TodoGroupComponent {
+  @Input() todoGroup!: TodoGroup;
+  @Input() index!: number;
+}
